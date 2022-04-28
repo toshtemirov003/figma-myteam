@@ -1,0 +1,138 @@
+.site-main{
+    padding-top: 60px;
+    background-color: $color-lynx-white;
+}
+.site-main__foto-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.site-main__heading{
+    width: 188px;
+    margin: 0 auto;
+    font-family: $font-oxygen;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $color-carbon-fiber;
+    &::after{
+        margin-top: 16px;
+        margin-bottom: 23px;
+        display: block;
+        border-bottom: 1px solid $color-kingly-cloud;
+        content: '';
+    }
+}
+.site-main__foto{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 67px;
+}
+.site-main__foto-content{
+    width: 100%;
+    max-width: 420px;
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 20px;
+}
+.site-main__foto-heading{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+    font-family: $font-lora;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: $color-white;
+}
+.site-main__foto-desc{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 17px;
+    font-family: $font-oxygen;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.site-main__foto-person{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-main__foto-name{
+    padding: 0;
+    margin: 0;
+    margin-right: 46%;
+    font-family: $font-oxygen;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.site-main__foto-date{
+    padding: 0;
+    margin: 0;
+    font-family: $font-oxygen;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align-last: left;
+}
+@media only screen and (max-width: 910px){
+    .site-main__foto-content{
+        top: 140px;
+        max-width: 380px;
+    }
+    .site-main__foto-heading{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .site-main__foto-desc{
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .site-main__foto-name{
+        margin-right: 50%;
+        font-size: 10px;
+        line-height: 30px;
+    }
+    .site-main__foto-date{
+        font-size: 10px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 840px){
+    .site-main__foto-wrapper{
+        flex-direction: column;
+    }
+    .site-main__foto-content{
+        max-width: 400px;
+        top: 170px;
+    }
+    .site-main__foto-name{
+        margin-right: 50%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .site-main__foto-content{
+        max-width: 300px;
+        top: 50%;
+    }
+    .site-main__foto-name{
+        margin-right: 30%;
+    }
+}
+@media only screen and (max-width: 460px){
+    .site-main__foto-content{
+        max-width: 300px;
+        top: 30%;
+    }
+    .site-main__foto-name{
+        margin-right: 30%;
+    }
+}

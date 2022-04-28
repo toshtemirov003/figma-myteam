@@ -1,0 +1,46 @@
+.site-nav{
+    padding-top: 22px;
+    padding-bottom: 23px;
+    background-color: $color-white
+}
+.site-nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include list-unstyled;
+}
+.site-nav__link{
+    font-family: $font-lora;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-bay-wharf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover{
+        color: $color-black;
+    }
+}
+@media only screen and (max-width: 760px){
+    .site-nav__link{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .site-nav__link{
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .site-nav__list{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .site-nav__item{
+        width: 130px;
+    }
+}
+
+
